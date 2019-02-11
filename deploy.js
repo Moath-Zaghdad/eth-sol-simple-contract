@@ -1,9 +1,10 @@
 const Web3 = require('web3');
 const { interface, bytecode } = require('./compile');
 const HDWalletProvider = require('truffle-hdwallet-provider');
+const keys = require('./keys');
 
 const provider = new HDWalletProvider(
-    'spare disorder human twice ecology chronic problem type gym combine risk front',
+    keys.mnemonic,
     'https://rinkeby.infura.io/v3/d016de6e29c24e8389566623a8dfac4e',
 );
 const web3 = new Web3(provider);

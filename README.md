@@ -1,5 +1,7 @@
 # Ethereum & Solidity Simple-Contract
-
+```
+cp keys.js.sample keys.js 
+```
 To run the test
 ```
 npm run test
